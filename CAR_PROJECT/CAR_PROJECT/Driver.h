@@ -10,11 +10,12 @@ class Driver
     Car * m_car;
 public:
     Driver();
+    void drive(Car * car);
     void enterCar();
-    void startCar(Car * car);
-    void accelerate(Car * car);
-    void brake(Car * car);
-    void stopCar(Car * car);
+    void startCar();
+    void accelerate();
+    void brake();
+    void stopCar();
     ~Driver();
 };
 

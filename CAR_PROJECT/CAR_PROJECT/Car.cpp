@@ -11,11 +11,6 @@ Car::Car()
 void Car::setDriver(Driver * driver)
 {
     m_driver = driver;
-    m_driver->enterCar();
-    m_driver->startCar(this);
-    m_driver->accelerate(this);
-    m_driver->brake(this);
-    m_driver->stopCar(this);
 }
 
 void Car::startEngine()
@@ -23,12 +18,12 @@ void Car::startEngine()
     m_engine.startEngine();
 }
 
-void Car::accelerate(Car * car)
+void Car::accelerate()
 {
-    m_accelerator.press(&m_wheel,car);
+    m_accelerator.press(&m_wheel,this);
 }
 
-void Car::moveCar(Car *car)
+void Car::moveCar()
 {
     cout<<"Car started Moving"<<endl;
 }
@@ -41,10 +36,9 @@ void Car::applyBrake()
 void Car::stopEngine()
 {
     m_engine.stopEngine();
-    stopCar(this);
 }
 
-void Car::stopCar(Car *car)
+void Car::stopCar()
 {
     cout<<"Car stopped"<<endl;
 

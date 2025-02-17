@@ -7,34 +7,41 @@ Driver::Driver()
     cout<<"Driver Constructor"<<endl;
 }
 
+void Driver::drive(Car *car)
+{
+    m_car = car;
+    this->enterCar();
+    this->startCar();
+    this->accelerate();
+    this->brake();
+    this->stopCar();
+}
+
 void Driver::enterCar()
 {
     cout<<"Driver is seated inside the Car"<<endl;
+    m_car->setDriver(this);
 }
 
-void Driver::startCar(Car * car)
+void Driver::startCar()
 {
-    cout<<"Driver starting the Car"<<endl;
-    m_car = car;
+    cout<<"Driver started the Car"<<endl;
     m_car->startEngine();
 }
 
-void Driver::accelerate(Car * car)
+void Driver::accelerate()
 {
-    m_car = car;
-    m_car->accelerate(m_car);
+    m_car->accelerate();
 }
 
-void Driver::brake(Car * car)
+void Driver::brake()
 {
     cout<<"Driver applied brake"<<endl;
-    m_car = car;
     m_car->applyBrake();
 }
-void Driver::stopCar(Car * car)
+void Driver::stopCar()
 {
-    cout<<"Driver stopping the Car"<<endl;
-    m_car = car;
+    cout<<"Driver stopped Car"<<endl;
     m_car->stopEngine();
 }
 Driver::~Driver()

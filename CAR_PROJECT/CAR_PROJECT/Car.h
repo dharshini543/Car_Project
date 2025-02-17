@@ -18,11 +18,11 @@ public:
     Car();
     void setDriver(Driver * driver);
     void startEngine();
-    void accelerate(Car * car);
-    void moveCar(Car * car);
+    void accelerate();
+    void moveCar();
     void applyBrake();
     void stopEngine();
-    void stopCar(Car * car);
+    void stopCar();
     ~Car();
 };
 

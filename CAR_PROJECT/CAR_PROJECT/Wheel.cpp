@@ -12,13 +12,14 @@ void Wheel::rotate(Car * car)
 {
     cout<<"Wheel started Rotating"<<endl;
     m_car = car;
-    m_car->moveCar(car);
+    m_car->moveCar();
 
 }
 
 void Wheel::stop()
 {
     cout<<"Wheel stopped rotating"<<endl;
+    m_car->stopCar();
 }
 
 Wheel::~Wheel()
