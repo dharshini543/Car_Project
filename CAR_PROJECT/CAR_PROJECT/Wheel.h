@@ -4,10 +4,10 @@ class Car;
 class Wheel
 {
     int m_speed;
-    Car * m_car;
+    Car* m_car;
 public:
     Wheel();
-    void rotate(Car * car);
+    void rotate(Car* car);
     void stop();
     ~Wheel();
 };

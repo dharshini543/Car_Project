@@ -1,0 +1,50 @@
+#include "Car.h"
+#include "Driver.h"
+#include<iostream>
+using namespace std;
+
+Car::Car()
+{
+    cout<<"Car Constructor"<<endl;
+}
+
+void Car::setDriver(Driver* driver)
+{
+    m_driver = driver;
+    //m_driver->drive(this)
+}
+
+void Car::startEngine()
+{
+    m_engine.startEngine();
+}
+
+void Car::accelerate()
+{
+    m_accelerator.press(&m_wheel,this);
+}
+
+void Car::moveCar()
+{
+    cout<<"Car started Moving"<<endl;
+}
+
+void Car::applyBrake()
+{
+    m_brake.apply(&m_wheel);
+}
+
+void Car::stopEngine()
+{
+    m_engine.stopEngine();
+}
+
+void Car::stopCar()
+{
+    cout<<"Car stopped"<<endl;
+
+}
+Car::~Car()
+{
+    cout<<"Car Destructor"<<endl;
+}

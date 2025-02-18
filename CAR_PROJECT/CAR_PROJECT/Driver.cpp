@@ -7,7 +7,7 @@ Driver::Driver()
     cout<<"Driver Constructor"<<endl;
 }
 
-void Driver::drive(Car *car)
+void Driver::drive(Car* car)
 {
     m_car = car;
     this->enterCar();

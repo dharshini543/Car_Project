@@ -8,7 +8,7 @@ Wheel::Wheel()
     cout<<"Wheel Constructor"<<endl;
 }
 
-void Wheel::rotate(Car * car)
+void Wheel::rotate(Car* car)
 {
     cout<<"Wheel started Rotating"<<endl;
     m_car = car;

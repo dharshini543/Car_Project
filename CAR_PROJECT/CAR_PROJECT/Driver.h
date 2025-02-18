@@ -7,10 +7,10 @@ using namespace std;
 class Driver
 {
     string m_name;
-    Car * m_car;
+    Car* m_car;
 public:
     Driver();
-    void drive(Car * car);
+    void drive(Car* car);
     void enterCar();
     void startCar();
     void accelerate();

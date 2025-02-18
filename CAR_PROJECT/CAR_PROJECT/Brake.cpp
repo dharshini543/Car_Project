@@ -6,7 +6,7 @@ Brake::Brake()
     cout<<"Brake Constructor"<<endl;
 }
 
-void Brake::apply(Wheel *wheel)
+void Brake::apply(Wheel* wheel)
 {
     wheel->stop();
 }

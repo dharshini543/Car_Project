@@ -4,14 +4,13 @@ using namespace std;
 
 int main()
 {
-    Driver dharshini;
-    Car fortuner;
+    Driver D;
+    Car myCar;
 
     cout<<endl;
-    dharshini.drive(&fortuner);
+    //myCar.setDriver(&D);
+    D.drive(&myCar);
     cout<<endl;
 
     return 0;
 }
-
-// fortuner.setDriver(&dharshini);

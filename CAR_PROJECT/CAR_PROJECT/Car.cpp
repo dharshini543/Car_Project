@@ -8,9 +8,10 @@ Car::Car()
     cout<<"Car Constructor"<<endl;
 }
 
-void Car::setDriver(Driver * driver)
+void Car::setDriver(Driver* driver)
 {
     m_driver = driver;
+    //m_driver->drive(this);
 }
 
 void Car::startEngine()

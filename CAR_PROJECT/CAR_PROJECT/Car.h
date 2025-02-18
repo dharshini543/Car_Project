@@ -13,10 +13,10 @@ class Car
     Wheel m_wheel;
     Accelerator m_accelerator;
     Brake m_brake;
-    Driver * m_driver;
+    Driver* m_driver;
 public:
     Car();
-    void setDriver(Driver * driver);
+    void setDriver(Driver* driver);
     void startEngine();
     void accelerate();
     void moveCar();
